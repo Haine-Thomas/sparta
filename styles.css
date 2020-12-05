@@ -1,0 +1,46 @@
+body {
+    font: normal 16px Verdana;
+    width: 100%;
+    height: 100vh;
+    display:flex;
+  }
+  
+.picture-list{
+    position: relative;
+    column-count: 4;
+    padding: 20px;
+}
+
+
+.picture-list-item {
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    transition: 0.25s ease-in-out;
+}
+
+.picture-list-item:hover img {
+    transform: scale(1.1);
+}
+
+h1{
+    position: absolute;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25px;
+    background: #5c5c5c;
+    color: #fff;
+    border-radius: 5px;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.25 ease-in-out;
+}
+
+.picture-list-item:hover h1{
+    opacity:1;
+
+}
