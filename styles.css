@@ -42,5 +42,34 @@ h1{
 
 .picture-list-item:hover h1{
     opacity:1;
+}
 
+@media screen and (max-width:1024px ) {
+    h1{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .picture-list {
+        column-count: 3;
+    }
+}
+
+@media screen and (max-width:425px) {
+    h1{
+        font-size: 12px;
+    }
+    .picture-list {
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width:375px) {
+    h1 {
+        font-size: 15px;
+    }
+    .picture-list {
+        column-count: 1;
+    }
 }

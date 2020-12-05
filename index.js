@@ -4,7 +4,7 @@ const Picture = {
     loadList: function() {
         return m.request({
             method: "GET",
-            url: "https://picsum.photos/v2/list?page=4&limit=10",
+            url: "https://picsum.photos/v2/list",
             withCredentials: false,
         })
         .then(function(result) {
