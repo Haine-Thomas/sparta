@@ -41,5 +41,3 @@ m.route(document.body, "/", {
         }
     }
 })
-
-m.render(document.body, "hello world")
