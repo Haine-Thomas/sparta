@@ -2,9 +2,10 @@
 const Picture = {
     list: [],
     loadList: function() {
+        const page = Math.round(Math.random() * 10);
         return m.request({
             method: "GET",
-            url: "https://picsum.photos/v2/list",
+            url: `https://picsum.photos/v2/list?page=${page}&limit=10`,
             withCredentials: false,
         })
         .then(function(result) {
