@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "budo --live --open index.js"
   },
   "keywords": [],
   "author": "",
